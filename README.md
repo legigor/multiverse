@@ -8,6 +8,7 @@
 - Upload worlds from other servers
 - Download the worlds as zip files
 - Customize Minecraft server images with plugins (BuildCraft, mini games)
+- Admin console and server logs
 
 ## Components
 
