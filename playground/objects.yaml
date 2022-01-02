@@ -1,0 +1,15 @@
+apiVersion: "multiverse.somerandom.xyz/v1"
+kind: ServerImageTemplate
+metadata:
+  name: "1.12"
+spec:
+  fileContent: |
+    FROM ubuntu
+    RUN apt-get update
+    ENTRYPOINT ["java", "-jar", "server.jar"]
+  values:
+    foo: bar
+    baz: daz
+    a:
+      b: "c"
+    d: "e"

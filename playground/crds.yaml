@@ -1,0 +1,29 @@
+apiVersion: apiextensions.k8s.io/v1
+kind: CustomResourceDefinition
+metadata:
+  name: serverimagetemplate.multiverse.somerandom.xyz
+spec:
+  group: multiverse.somerandom.xyz
+  versions:
+    - name: v1
+      served: true
+      storage: true
+      schema:
+        openAPIV3Schema:
+          type: object
+          properties:
+            spec:
+              type: object
+              properties:
+                fileContent:
+                  type: string
+                values:
+                  type: object
+                  additionalProperties: true
+  scope: Namespaced
+  names:
+    plural: serverimagetemplate
+    singular: serverimagetemplates
+    kind: ServerImageTemplate
+    shortNames:
+      - sit
