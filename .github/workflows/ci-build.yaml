@@ -20,5 +20,10 @@ jobs:
         run: go mod download
       - name: Compile all packages
         run: make build
+      - name: Run local K3S cluster for tests
+        uses: debianmaster/actions-k3s@master
+        id: k3s
+        with:
+          version: 'latest'
       - name: Run all tests
         run: make test

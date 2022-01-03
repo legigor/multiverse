@@ -1,9 +1,13 @@
 package main
 
 import (
+	"github.com/legigor/multiverse/controller"
 	"github.com/sirupsen/logrus"
 )
 
 func main() {
-	logrus.Info("Hello, Steve and Alex")
+	err := controller.Execute()
+	if err != nil {
+		logrus.Error(err)
+	}
 }
