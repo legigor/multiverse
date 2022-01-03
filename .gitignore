@@ -203,3 +203,5 @@ build/
 # Environment files
 .env*
 *.env
+
+/dist/
