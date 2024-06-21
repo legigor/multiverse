@@ -3,7 +3,7 @@ on:
   push:
 
 env:
-  GOLANG_VERSION: '1.17.5'
+  GOLANG_VERSION: "1.22.3"
 
 jobs:
   build-go:
@@ -24,6 +24,6 @@ jobs:
         uses: debianmaster/actions-k3s@master
         id: k3s
         with:
-          version: 'latest'
+          version: "latest"
       - name: Run all tests
         run: make test
