@@ -1,12 +1,12 @@
 module github.com/legigor/multiverse
 
 go 1.22.3
-toolchain go1.23.4
+toolchain go1.24.1
 
 require (
 	github.com/sirupsen/logrus v1.9.3
 	github.com/stretchr/testify v1.10.0
-	k8s.io/apimachinery v0.32.2
+	k8s.io/apimachinery v0.32.3
 	k8s.io/client-go v0.32.2
 )
 
